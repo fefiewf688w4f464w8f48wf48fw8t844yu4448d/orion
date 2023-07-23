@@ -646,7 +646,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	MakeDraggable(DragPoint, MainWindow)
 
 	AddConnection(CloseBtn.MouseButton1Up, function()
-		game.CoreGui.Orion:Destroy()
+		Orion:Destroy()
 	end)
 
 	AddConnection(UserInputService.InputBegan, function(Input)
